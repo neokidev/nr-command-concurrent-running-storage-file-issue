@@ -12,7 +12,9 @@ This document provides steps to reproduce an issue that occurs in the following 
    npm install -g @antfu/ni
    ```
 
-2. Run the following commands to concurrently run scripts with different string lengths.
+1. Specify the agent to be used by `ni` by referring to [this config](https://github.com/antfu/ni#config).
+
+1. Run the following commands to concurrently run scripts with different string lengths.
 
    ```sh
    # You can choose any script names.
@@ -22,4 +24,4 @@ This document provides steps to reproduce an issue that occurs in the following 
    > **Note**
    > If the issue does not occur on the first run, repeat the command multiple times.
 
-3. Once the issue occurs, the `nr` command will stop working. For example, if you try to run a script that does not exist, it will not output an error message.
+1. Once the issue occurs, the `nr` command will stop working. For example, if you try to run a script that does not exist, it will not output an error message.
